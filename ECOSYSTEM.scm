@@ -1,0 +1,66 @@
+;; SPDX-License-Identifier: AGPL-3.0-or-later
+;; ECOSYSTEM.scm - Project relationship mapping
+
+(ecosystem
+  (version "1.0")
+  (name "vexometer-satellites")
+  (type "documentation-hub")
+  (purpose "Umbrella repository for vexometer satellite intervention system documentation and integration protocols")
+
+  (position-in-ecosystem
+    (role "hub")
+    (layer "documentation")
+    (description "Central registry and documentation hub for all vexometer satellites. Maintains integration protocols (vexometer-trace-v1, vexometer-efficacy-v1) and development roadmap."))
+
+  (related-projects
+    ((name . "vexometer")
+     (relationship . "sibling-standard")
+     (description . "Main diagnostic instrument - measures 10 ISA metrics"))
+    ((name . "vex-lazy-eliminator")
+     (relationship . "potential-consumer")
+     (description . "Completeness enforcement satellite (reduces CII, LPS)"))
+    ((name . "vex-hallucination-guard")
+     (relationship . "potential-consumer")
+     (description . "Factual claim verification satellite (reduces EFR)"))
+    ((name . "vex-sycophancy-shield")
+     (relationship . "potential-consumer")
+     (description . "Epistemic commitment tracking satellite (reduces LPS, EFR)"))
+    ((name . "vex-confidence-calibrator")
+     (relationship . "potential-consumer")
+     (description . "Structured uncertainty satellite (reduces EFR)"))
+    ((name . "vex-specification-anchor")
+     (relationship . "potential-consumer")
+     (description . "Immutable requirements ledger satellite (reduces SFR, ICS)"))
+    ((name . "vex-instruction-persistence")
+     (relationship . "potential-consumer")
+     (description . "System instruction compliance satellite (reduces TII, ICS)"))
+    ((name . "vex-backtrack-enabler")
+     (relationship . "potential-consumer")
+     (description . "Low-friction restart support satellite (reduces SRS, ICS)"))
+    ((name . "vex-context-firewall")
+     (relationship . "potential-consumer")
+     (description . "Truth maintenance satellite (reduces EFR, ICS)"))
+    ((name . "vex-scope-governor")
+     (relationship . "potential-consumer")
+     (description . "Scope contract enforcement satellite (reduces SFR, PQ)"))
+    ((name . "vex-error-recovery")
+     (relationship . "potential-consumer")
+     (description . "Strategy variation on failure satellite (reduces RCI)"))
+    ((name . "vex-verbosity-compressor")
+     (relationship . "potential-consumer")
+     (description . "Information density optimisation satellite (reduces LPS, TII)"))
+    ((name . "vex-clarification-gate")
+     (relationship . "potential-consumer")
+     (description . "Risk-weighted ambiguity handling satellite (reduces PQ, TII)"))
+    ((name . "vex-satellite-template")
+     (relationship . "sibling-standard")
+     (description . "Template repository for creating new satellites"))
+    ((name . "rhodium-standard-repositories")
+     (relationship . "inspiration")
+     (description . "RSR compliance framework used by all satellites")))
+
+  (what-this-is
+    "A documentation hub that maintains the satellite registry, integration protocol specifications (vexometer-trace-v1 for before/after validation, vexometer-efficacy-v1 for statistical reporting), development roadmap, and contribution guidelines for the vexometer satellite ecosystem. Acts as the central coordination point for 12 planned satellite interventions.")
+
+  (what-this-is-not
+    "Not an implementation (satellites contain actual code). Not vexometer itself (vexometer measures, satellites intervene). Not a monorepo (each satellite is independent). Not prescriptive of satellite internals (satellites are autonomous within protocol constraints)."))
